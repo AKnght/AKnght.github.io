@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- A knight's helm that is also a pen nib: the cross of the visor runs out through the
+       point, the way a nib's slit does. -->
+  <rect width="64" height="64" rx="15" fill="#6750a4"/>
+  <path transform="translate(8 7)" fill="#fff"
+    d="M14 4h20a6 6 0 0 1 6 6v12.5c0 3-1.05 5.9-2.95 8.2L25.2 44.6V19.8h10.3v-3.4H25.2V9.5h-2.4v6.9H12.5v3.4h10.3v24.8L10.95 30.7A12.8 12.8 0 0 1 8 22.5V10a6 6 0 0 1 6-6z"/>
+</svg>

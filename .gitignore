@@ -1,0 +1,7 @@
+# Machine-specific: editor and assistant settings, and what Windows and macOS leave behind.
+.claude/
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini
+.DS_Store
