@@ -75,8 +75,10 @@ can cut it off: leave the `MX` records alone, or move the mailbox first.
 
 - **The email address.** `admin@aknghtstudios.com` came from the old site. If it is not
   the one to use, search the repository for it; it appears in three files.
-- **Pricing.** The app page gives the free allowance (2,000 words a week) and says monthly
-  or yearly, with no prices. Add them when the store products exist.
+- **Pricing.** The app page says what is free (dictation in one document, with a reminder
+  past 2,000 dictated words a week) and what a subscription adds (dictation in every
+  document, no reminders), monthly or yearly, with no prices. Add them when the store
+  products exist, and keep the page in step with the app if the model changes again.
 - **The privacy page** is marked Draft. It was written from how the app actually behaves,
   but it is a legal page: read it, then remove the Draft notice.
 - **The logo.** The helm-and-nib mark was drawn for this site. If a real one comes along,
