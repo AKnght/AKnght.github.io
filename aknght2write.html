@@ -291,6 +291,7 @@
             <h2>Made for a phone that stays in your pocket.</h2>
             <p>Pair a cheap Bluetooth camera remote, a ring or a foot pedal and give each button a job: dictate, new paragraph, undo, read back. Click to start, click again to send, double-click to throw a bad take away.</p>
             <p>A buzz and a tone tell you it heard you, because no animation reaches a pocket. A Bluetooth headset can be the microphone.</p>
+            <p>A command it could not make out feels different: a heavier buzz and a falling tone, and nothing is written. Click the same button and say it again.</p>
           </div>
           <div class="split__visual" style="text-align: center;">
             <span class="bezel"><img src="assets/img/app/buttons.png" width="360" height="760" alt="The Bluetooth screen: a remote’s buttons shown as tiles, each with its job: Dictate, New paragraph, Undo, No, Yes, Cancel, Hold to talk, Read back." loading="lazy"></span>
@@ -348,7 +349,7 @@
           <p class="lead">Hold Command and say what you want done. The list is short and fixed on purpose: nothing is guessing at what you meant, so the same words do the same thing every time.</p>
         </div>
 
-        <p class="promise">If a command is not recognized, it is written down as prose rather than guessed at or discarded. Your words are never lost.</p>
+        <p class="promise">If a command is not understood, nothing is changed and nothing is written. The app says so, marks the place, and keeps the recording so you can hear it. Say it again, write the words down after all, or toss them. Your words are never lost.</p>
 
         <ul class="legend" aria-label="What a command can cost you">
           <li><span class="dot dot--safe"></span>Cannot lose writing</li>
@@ -481,7 +482,7 @@
           </article>
           <article class="card">
             <h3 class="h-card">It will not guess</h3>
-            <p>Mishearing prose as a command could destroy writing; mishearing a command as prose leaves a few stray words. So every doubtful case ends the same way: it is written down.</p>
+            <p>Mishearing prose as a command could destroy writing, so nothing it does not recognize is ever acted on. A command it cannot make out leaves your page exactly as it was, and waits in the margin with its recording until you say it again, keep the words, or toss them.</p>
           </article>
           <article class="card">
             <h3 class="h-card">It will not phone home</h3>
@@ -569,6 +570,10 @@
           <details>
             <summary>Is this AI?</summary>
             <div><p>The listening is. Speech recognition uses Whisper, an open-source speech model released by OpenAI, run on the phone itself by the open-source whisper.cpp. The writing is not: there is no language model, nothing generates or “improves” your text, and commands are matched against a fixed list.</p></div>
+          </details>
+          <details>
+            <summary>What happens when it mishears a command?</summary>
+            <div><p>Nothing is written and nothing is changed, so there is nothing to undo. You feel a buzz and hear a falling tone, and a small mark appears in the margin where you gave the command. Say it again and it runs. Later, tap the mark to hear the recording, write the words down where you said them, or toss them. Anything too long to have been a command is simply written down, so a paragraph said with the wrong button still lands in your book.</p></div>
           </details>
           <details>
             <summary>Which languages does it understand?</summary>
