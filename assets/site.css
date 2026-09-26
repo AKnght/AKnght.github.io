@@ -350,6 +350,19 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .on-night .eyebrow { color: var(--lilac); }
 
+/* The app's icon beside its name: large in the app page's hero, smaller where the front page
+   introduces it, small on the card at the end of the games. The SVG brings its own rounded
+   corners; the shadow is what lifts it off the page. */
+.app-icon {
+  display: block;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 22%;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+.app-icon--sm { width: 4rem; height: 4rem; margin-bottom: 1.25rem; box-shadow: 0 8px 22px rgba(20, 16, 42, 0.25); }
+.app-icon--card { width: 3.25rem; height: 3.25rem; margin-bottom: 1rem; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); }
+
 .h-display { font-size: clamp(2.5rem, 4.2vw + 1.4rem, 4.5rem); letter-spacing: -0.02em; }
 .h-section { font-size: clamp(1.875rem, 2.2vw + 1.2rem, 3rem); }
 .h-card { font-family: var(--sans); font-size: 1.125rem; font-weight: 700; letter-spacing: 0; line-height: 1.3; }

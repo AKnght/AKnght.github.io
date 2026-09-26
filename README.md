@@ -20,7 +20,7 @@ assets/
   favicon.svg       the mark: a knight's helm that is also a pen nib
   img/team/         Randy and Jesse
   img/games/        the seven game images, from the old aknghtstudios.com
-  img/app/          three renders of the app's own screens
+  img/app/          three renders of the app's own screens, and icon.svg, the app's icon
 ```
 
 Every link and asset path is **relative**, so the site works from a custom domain, from a
