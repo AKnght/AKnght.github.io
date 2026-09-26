@@ -9,8 +9,13 @@ This repository is `AKnght/AKnght.github.io`, so GitHub Pages serves its `main` 
 
 ```
 index.html          the studio's front page
-aknght2write.html   everything about the app; the page a store listing should point at
-privacy.html        the privacy policy a store listing needs (marked Draft)
+AKnght2Write/       the app's pages, at aknghtstudios.com/AKnght2Write/ (the case matters)
+  index.html        everything about the app; the store listings' marketing URL
+  privacy/          the privacy policy both stores require
+  terms/            the terms of use, linked beside Subscribe in the app
+  support/          the App Store's required support URL
+aknght2write.html   forwards to AKnght2Write/, so old links still work
+privacy.html        forwards to AKnght2Write/privacy/, likewise
 404.html            GitHub Pages serves this for a missing page
 .nojekyll           tells GitHub Pages to serve the files as they are
 assets/
