@@ -152,7 +152,7 @@
           <article class="card">
             <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg></div>
             <h3 class="h-card">Wherever you are, talk</h3>
-            <p>On a walk, behind the wheel, or lying in bed: hold the button, or click a remote, and say the scene. Sentences arrive whole, with their punctuation. A long pause becomes a paragraph.</p>
+            <p>On a walk, behind the wheel, or lying in bed: hold the button, or click a remote, and say the scene. Sentences arrive whole, with their punctuation, and a new paragraph is one tap away.</p>
           </article>
           <article class="card">
             <div class="tile tile--mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9.5v5h3.5L12 18V6L7.5 9.5H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></svg></div>
@@ -245,7 +245,7 @@
           <div class="split__copy">
             <p class="eyebrow">Made for fiction</p>
             <h2>Dialogue lands as dialogue.</h2>
-            <p>In Author mode, quotation marks come out curled and a new speaker starts a new paragraph. The recognizer decides what is dialogue from your tone of voice, and a flat reading can fool it. When it misses a line, say <span class="say">quote that</span> and the last thing you said is wrapped in quotation marks.</p>
+            <p>In Author mode, quotation marks come out curled and a new speaker starts a new paragraph. If you like, a pause between two lines can mark the change of speaker as well: read two short passages once, and the app learns how long your own pauses run. The recognizer decides what is dialogue from your tone of voice, and a flat reading can fool it. When it misses a line, say <span class="say">quote that</span> and the last thing you said is wrapped in quotation marks, or <span class="say">quote 7</span> for a sentence by its number on the page.</p>
             <p>Writing something that is not fiction? Standard mode writes what it hears and adds no quotation mark you did not ask for. The mode is remembered for each document.</p>
           </div>
           <div class="split__visual">
@@ -365,6 +365,8 @@
               <dt><span class="dot dot--safe"></span>new paragraph</dt><dd>Start a new paragraph</dd>
               <dt><span class="dot dot--safe"></span>new line</dt><dd>Break the line without starting a paragraph</dd>
               <dt><span class="dot dot--safe"></span>join paragraphs</dt><dd>Put this paragraph back onto the one above</dd>
+              <dt><span class="dot dot--safe"></span>line break</dt><dd>A scene break: a line across the page, with the next sentence under it</dd>
+              <dt><span class="dot dot--undo"></span>undo line break</dt><dd>Take the whole break out again, however long ago you made it</dd>
               <dt><span class="dot dot--safe"></span>new chapter &lt;title&gt;</dt><dd>Start a chapter</dd>
             </dl>
           </div>
@@ -391,7 +393,7 @@
             <dl>
               <dt><span class="dot dot--safe"></span>select last word</dt><dd>Or “sentence”, or “paragraph”</dd>
               <dt><span class="dot dot--safe"></span>select &lt;phrase&gt;</dt><dd>The last time you wrote that phrase</dd>
-              <dt><span class="dot dot--safe"></span>capitalize that</dt><dd>Also “all caps that” and “lowercase that”</dd>
+              <dt><span class="dot dot--safe"></span>capitalize that</dt><dd>Also “all caps that” and “lowercase that”. Put the cursor on a word and it works on that word</dd>
             </dl>
           </div>
           <div class="card">
@@ -400,6 +402,7 @@
               <dt><span class="dot dot--undo"></span>undo · redo</dt><dd>Take the last thing back, or put it back</dd>
               <dt><span class="dot dot--undo"></span>scratch that</dt><dd>Delete what you selected, or what you just said</dd>
               <dt><span class="dot dot--undo"></span>quote that</dt><dd>Put quotation marks around what you selected, or what you just said</dd>
+              <dt><span class="dot dot--undo"></span>quote &lt;n&gt;</dt><dd>Quotation marks around a sentence by its number on the page; “quote 7 to 9” takes a run of them</dd>
               <dt><span class="dot dot--undo"></span>replace &lt;x&gt; with &lt;y&gt;</dt><dd>Swap one phrase for another</dd>
             </dl>
           </div>
@@ -410,6 +413,15 @@
               <dt><span class="dot dot--asks"></span>delete last &lt;n&gt; sentences</dt><dd>Several at once, so it asks</dd>
               <dt><span class="dot dot--asks"></span>delete this paragraph</dt><dd>It quotes the opening words back to you first</dd>
               <dt><span class="dot dot--asks"></span>delete chapter &lt;n&gt; · clear everything</dt><dd>Asks, tells you the word count, and one undo brings it back</dd>
+            </dl>
+          </div>
+          <div class="card">
+            <h3>Notes and settings</h3>
+            <dl>
+              <dt><span class="dot dot--undo"></span>add note &lt;words&gt;</dt><dd>A note on the sentence you are in, kept beside the writing and never in it</dd>
+              <dt><span class="dot dot--undo"></span>add note to &lt;n&gt; &lt;words&gt;</dt><dd>The same, on a sentence by its number</dd>
+              <dt><span class="dot dot--safe"></span>turn on &lt;setting&gt; · turn off &lt;setting&gt;</dt><dd>Any switch in Settings, by its name: “turn off sentence numbers”</dd>
+              <dt><span class="dot dot--safe"></span>set &lt;setting&gt; to &lt;choice&gt;</dt><dd>“Set theme to dark mode”, “set landscape to one hand”</dd>
             </dl>
           </div>
         </div>
@@ -440,12 +452,12 @@
             <figcaption><b>The Library</b>Projects, folders, documents and chapters on one map, each with its word count.</figcaption>
           </figure>
           <figure class="shot">
-            <span class="bezel"><img src="../assets/img/app/settings.png" width="360" height="760" alt="Settings: the writing mode, Author or Standard, above folded sections for Visuals, Gamification, Bluetooth, While you write and The caret." loading="lazy"></span>
-            <figcaption><b>Settings that fold</b>The writing mode on top, everything else one tap away, and the master switches work while shut.</figcaption>
+            <span class="bezel"><img src="../assets/img/app/settings.png" width="360" height="760" alt="Settings: Theme, then the Dialogue heading carrying the writing mode, Author or Standard, above folded sections for The page, When words land, Felt and heard and Counting the writing." loading="lazy"></span>
+            <figcaption><b>Settings that fold</b>The writing mode on the first heading, everything else one tap away, and the master switches work while shut.</figcaption>
           </figure>
           <figure class="shot">
             <span class="bezel"><img src="../assets/img/app/buttons.png" width="360" height="760" alt="The Bluetooth screen, with each remote shown as a card of button tiles." loading="lazy"></span>
-            <figcaption><b>Buttons</b>Every remote is a card of tiles. Press a button to add it, tap its tile to give it a job.</figcaption>
+            <figcaption><b>Buttons</b>Every remote is a card of tiles, one open at a time. Press a button to add it, tap its tile to give it a job.</figcaption>
           </figure>
         </div>
 
@@ -464,6 +476,16 @@
             <div class="tile tile--amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 4.500h8M13 4.500V20M17 4.500V20M13 12.500h-2.500a4 4 0 0 1 0-8"/></svg></div>
             <h3 class="h-card">A paragraph is a button</h3>
             <p>Dialogue needs a new paragraph at every turn, and saying so each time is slow. The ¶ button does it instantly, with the same undo as the spoken command.</p>
+          </article>
+          <article class="card">
+            <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.500" y="6.500" width="19" height="11" rx="2"/><path d="M6 10v4M18 10v4"/></svg></div>
+            <h3 class="h-card">On its side</h3>
+            <p>Turn the phone and the buttons move to rails under your thumbs: Dictate and Command under one, Undo and ¶ under the other, or all four under one hand. A left-hand mode swaps them over.</p>
+          </article>
+          <article class="card">
+            <div class="tile tile--mint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3.500h9l4 4V20.500H6z"/><path d="M15 3.500v4h4M9 12.500h6M9 16h4"/></svg></div>
+            <h3 class="h-card">Notes in the margin</h3>
+            <p>Say <span class="say">add note to seven</span> and what follows is kept beside sentence seven, never in it. Notes travel with their sentence, live in a file beside the document, and are listed by chapter.</p>
           </article>
         </div>
       </div>
@@ -590,7 +612,7 @@
           </details>
           <details>
             <summary>What about hands-free?</summary>
-            <div><p>Hands-free dictation with a wake word is built and works in our testing, but it is not switched on in the phone app yet. Holding a button, or clicking a remote, is more dependable when you are on the move, so that came first.</p></div>
+            <div><p>There is none, on purpose. We built a wake-word mode and measured it, and it was never going to be dependable on the move. The microphone opens only while you hold a button or between a remote’s start and send clicks, which is also what lets the app promise it never listens on its own.</p></div>
           </details>
           <details>
             <summary>Can I get my writing out?</summary>
